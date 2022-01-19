@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Real Life INFERNO Counter Strike map</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/blueimp-gallery.min.css">
+  <!-- IE -->
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <!-- Appel du JS et du plugin LityJS -->
+  <link href="../styles/lity.css" rel="stylesheet">
+  <script src="../js/jquery.js"></script>
+  <script src="../js/lity.js"></script>
+</head>
+<body>
+
+<img src="../images/background.svg" alt="background" class="background">
+<div class="main">
+  <header>
+    <div class="wrapper">
+      <nav>
+        <a href="../index.html"><img src="../images/logo.svg" alt="logo" class="logo"></a>
+        <label for="menu-mobile" class="menu-mobile">Afficher le menu</label>
+        <input type="checkbox" id="menu-mobile" role="button">
+        <ul>
+          <li><a href="../index.html">Projects</a></li>
+          <li><a href="../shop.html">Shop</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="content">
+    <section>
+      <div class="wrapper">
+        <h4><a href="../index.html"><span>Projects ></span></a> Real Life INFERNO Counter Strike map</h4>
+        <h1>Real Life INFERNO Counter Strike map</h1>
+        <div class="flex-container-project">
+          <div class="flex-item-project-gauche">
+            <section>
+              <div class="wrapper2">
+                <div class="videos">
+                  <div class="video">
+                    <a href="/www.youtube.com/watch?v=G0HOBRQiGfk" data-lity><img src="../images/14/real-life-inferno-video-img.jpg"></a>
+                    <p>Vidéo de présentation de la scène capturée en temps réel.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="flex-item-project-droite">
+            <div class="identification">
+              <p class="description-project">3d realtime rendering</p>
+              <p class="title-project">Real Life INFERNO Counter Strike map</p>
+
+              <p class="description-project2"><i>EN</i> - <b>Real Life INFERNO Counter Strike map</b> is a 3d realtime rendering made with <b>Unreal Engine</b>.
+                That project was really important for me as De_Inferno is my favorite Counter Strike map. I really wanted to show the "in real-life" version of it, as we all know on Counter Strike Global Offensive.</p>
+              <p class="description-project2">This was completly different than my usual work, but I must admit it was very enjoyable! I tried to test the use of Quixel Megascans & Mixer to see the efficienty of the workflow, and it is really impressive.</p>
+
+              <p class="description-project2"><i>FR</i> - <b>Real Life INFERNO Counter Strike map</b> est rendu vidéo en temps-réel avec <b>Unreal Engine</b>.
+                Ce projet était très important pour moi car De_Inferno est ma carte préférée dans le jeu Counter Strike. Je voulais vraiment montrer une version "réelle" de cette carte, que l'on connait tous dans Counter Strike Global Offensive.</p>
+              <p class="description-project2">C'était complétement différent de ce que je fais habituellement, mais je dois admettre que c'était très plaisant. J'ai essayer de tester l'utilisation de Quixel Megascans alliée avec Mixer pour voir l'efficacité de ce workflow, et c'était impressionant.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="library">
+      <div class="wrapper">
+        <div id="links">
+          <a href="../images/14/real-life-inferno-01.jpg" title="Real Life INFERNO 01"><img src="../images/14/real-life-inferno-preview-01.jpg" alt="Real Life INFERNO 01" class="img-project-library"></a>
+          <a href="../images/14/real-life-inferno-02.jpg" title="Real Life INFERNO 02"><img src="../images/14/real-life-inferno-preview-02.jpg" alt="Real Life INFERNO 02" class="img-project-library"></a>
+          <a href="../images/14/real-life-inferno-03.jpg" title="Real Life INFERNO 03"><img src="../images/14/real-life-inferno-preview-03.jpg" alt="Real Life INFERNO 03" class="img-project-library"></a>
+          <a href="../images/14/real-life-inferno-04.jpg" title="Real Life INFERNO 04"><img src="../images/14/real-life-inferno-preview-04.jpg" alt="Real Life INFERNO 04" class="img-project-library"></a>
+          <a href="../images/14/real-life-inferno-05.jpg" title="Real Life INFERNO 05"><img src="../images/14/real-life-inferno-preview-05.jpg" alt="Real Life INFERNO 05" class="img-project-library"></a>
+        </div>
+        <div id="blueimp-gallery" class="blueimp-gallery">
+          <div class="slides"></div>
+          <h3 class="title"></h3>
+          <a class="prev">‹</a>
+          <a class="next">›</a>
+          <a class="close">×</a>
+          <a class="play-pause"></a>
+          <ol class="indicator"></ol>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <div class="copyright">
+        <p>Copyright © 2021 Jean-Baptiste Sottile | Conçu par <a href="https://www.dcorroyer.fr/" target="_blank">Dylan Corroyer</a></p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="../js/blueimp-gallery.min.js"></script>
+<script>
+    document.getElementById('links').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+            link = target.src ? target.parentNode : target,
+            options = {index: link, event: event},
+            links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+</script>
+
+</body>
+</html>

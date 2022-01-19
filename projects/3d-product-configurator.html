@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>3D Product Configurator</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/blueimp-gallery.min.css">
+  <!-- IE -->
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+</head>
+<body>
+
+<img src="../images/background.svg" alt="background" class="background">
+<div class="main">
+  <header>
+    <div class="wrapper">
+      <nav>
+        <a href="../index.html"><img src="../images/logo.svg" alt="logo" class="logo"></a>
+        <label for="menu-mobile" class="menu-mobile">Afficher le menu</label>
+        <input type="checkbox" id="menu-mobile" role="button">
+        <ul>
+          <li><a href="../index.html">Projects</a></li>
+          <li><a href="../shop.html">Shop</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="content">
+    <section>
+      <div class="wrapper">
+        <h4><a href="../index.html"><span>Projects ></span></a> 3D Product Configurator</h4>
+        <h1>3D Product Configurator</h1>
+        <div class="flex-container-project">
+          <div class="flex-item-project-gauche">
+            <div class="img-project">
+              <img src="../images/09/3d-product-configurator-preview-03.jpg" class="img-project-library">
+            </div>
+          </div>
+          <div class="flex-item-project-droite">
+            <div class="identification">
+              <p class="description-project">3d mobile application</p>
+              <p class="title-project">3D Product Configurator</p>
+
+              <p class="description-project2"><i>EN</i> - <b>3D Product Configurator</b> is a mobile application allowing the user to visualize one or several products with a 3D view on his smartphone.</p><p class="description-project2">It has many features (rotation, zoom, color/matreial changing and also informations content in the UI). These features are entirely customizable and adaptable according to the client.</p>
+              <p class="description-project2"><i>FR</i> - <b>3D Product Configurator</b> est une application mobile qui permet à un client de visualiser un ou plusieurs produits en 3D directement sur son smartphone.</p><p class="description-project2">Elle est composée de plusieurs fonctionnalités (Rotation, zoom, changement de coloris/matériaux ainsi qu'affichage de bulle d'information). Ces fonctionnalités sont entièrement personnalisables et adaptables selon le besoin du client.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="library">
+      <div class="wrapper">
+        <div id="links">
+          <a href="../images/09/3d-product-configurator-01.jpg" title="3D Product Configurator 01"><img src="../images/09/3d-product-configurator-preview-01.jpg" alt="3D Product Configurator 01" class="img-project-library"></a>
+          <a href="../images/09/3d-product-configurator-02.jpg" title="3D Product Configurator 02"><img src="../images/09/3d-product-configurator-preview-02.jpg" alt="3D Product Configurator 02" class="img-project-library"></a>
+          <a href="../images/09/3d-product-configurator-03.jpg" title="3D Product Configurator 03"><img src="../images/09/3d-product-configurator-preview-03.jpg" alt="3D Product Configurator 03" class="img-project-library"></a>
+          <a href="../images/09/3d-product-configurator-04.jpg" title="3D Product Configurator 04"><img src="../images/09/3d-product-configurator-preview-04.jpg" alt="3D Product Configurator 04" class="img-project-library"></a>
+        </div>
+        <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+          <div class="slides"></div>
+          <h3 class="title"></h3>
+          <a class="prev">‹</a>
+          <a class="next">›</a>
+          <a class="close">×</a>
+          <a class="play-pause"></a>
+          <ol class="indicator"></ol>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <div class="copyright">
+        <p>Copyright © 2021 Jean-Baptiste Sottile | Conçu par <a href="https://www.dcorroyer.fr/" target="_blank">Dylan Corroyer</a></p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="../js/blueimp-gallery.min.js"></script>
+<script>
+    document.getElementById('links').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+            link = target.src ? target.parentNode : target,
+            options = {index: link, event: event},
+            links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+</script>
+
+</body>
+</html>

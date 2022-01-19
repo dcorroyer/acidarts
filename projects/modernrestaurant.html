@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Modern Restaurant</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/blueimp-gallery.min.css">
+  <!-- IE -->
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <!-- Appel du JS et du plugin LityJS -->
+  <link href="../styles/lity.css" rel="stylesheet">
+  <script src="../js/jquery.js"></script>
+  <script src="../js/lity.js"></script>
+</head>
+<body>
+
+<img src="../images/background.svg" alt="background" class="background">
+<div class="main">
+  <header>
+    <div class="wrapper">
+      <nav>
+        <a href="../index.html"><img src="../images/logo.svg" alt="logo" class="logo"></a>
+        <label for="menu-mobile" class="menu-mobile">Afficher le menu</label>
+        <input type="checkbox" id="menu-mobile" role="button">
+        <ul>
+          <li><a href="../index.html">Projects</a></li>
+          <li><a href="../shop.html">Shop</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="content">
+    <section>
+      <div class="wrapper">
+        <h4><a href="../index.html"><span>Projects ></span></a> Modern Restaurant</h4>
+        <h1>Modern Restaurant</h1>
+        <div class="flex-container-project">
+          <div class="flex-item-project-gauche">
+            <section>
+              <div class="wrapper2">
+                <div class="videos">
+                  <div class="video">
+                    <a href="/www.youtube.com/watch?v=lXi1v-3u8aA" data-lity><img src="../images/12/modern-restaurant-video-img.jpg"></a>
+                    <p>Vidéo de présentation de la scène capturée en temps réel.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="flex-item-project-droite">
+            <div class="identification">
+              <p class="description-project">3d realtime rendering</p>
+              <p class="title-project">Modern Restaurant</p>
+
+              <p class="description-project2"><i>EN</i> - <b>Modern Restaurant</b> is a 3d realtime rendering made with <b>Unreal Engine</b>.
+                The main goal of that project was to feel the "South of France" through this restaurant.</p>
+              <p class="description-project2">Also, it was meant to be created as it would be with Corona or VRay, to demonstrate again the power of realtime tools.</p>
+
+              <p class="description-project2"><i>FR</i> - <b>Modern Restaurant</b> est rendu vidéo en temps-réel avec <b>Unreal Engine</b>.
+                Le but principal de ce projet était de ressentir le "Sud de la France" à travers ce restaurant.</p>
+              <p class="description-project2">Cela a aussi été créé de la même manière qu'avec Corona ou VRay, pour démontrer encore le potentiel des outils temps-réel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="library">
+      <div class="wrapper">
+        <div id="links">
+          <a href="../images/12/modern-restaurant-01.jpg" title="Modern Restaurant 01"><img src="../images/12/modern-restaurant-preview-01.jpg" alt="Modern Restaurant 01" class="img-project-library"></a>
+          <a href="../images/12/modern-restaurant-02.jpg" title="Modern Restaurant 02"><img src="../images/12/modern-restaurant-preview-02.jpg" alt="Modern Restaurant 02" class="img-project-library"></a>
+          <a href="../images/12/modern-restaurant-03.jpg" title="Modern Restaurant 03"><img src="../images/12/modern-restaurant-preview-03.jpg" alt="Modern Restaurant 03" class="img-project-library"></a>
+          <a href="../images/12/modern-restaurant-04.jpg" title="Modern Restaurant 04"><img src="../images/12/modern-restaurant-preview-04.jpg" alt="Modern Restaurant 04" class="img-project-library"></a>
+          <a href="../images/12/modern-restaurant-05.jpg" title="Modern Restaurant 05"><img src="../images/12/modern-restaurant-preview-05.jpg" alt="Modern Restaurant 05" class="img-project-library"></a>
+          <a href="../images/12/modern-restaurant-06.jpg" title="Modern Restaurant 06"><img src="../images/12/modern-restaurant-preview-06.jpg" alt="Modern Restaurant 06" class="img-project-library"></a>
+          <a href="../images/12/modern-restaurant-07.jpg" title="Modern Restaurant 07"><img src="../images/12/modern-restaurant-preview-07.jpg" alt="Modern Restaurant 07" class="img-project-library"></a>
+          <a href="../images/12/modern-restaurant-08.jpg" title="Modern Restaurant 08"><img src="../images/12/modern-restaurant-preview-08.jpg" alt="Modern Restaurant 08" class="img-project-library"></a>
+        </div>
+        <div id="blueimp-gallery" class="blueimp-gallery">
+          <div class="slides"></div>
+          <h3 class="title"></h3>
+          <a class="prev">‹</a>
+          <a class="next">›</a>
+          <a class="close">×</a>
+          <a class="play-pause"></a>
+          <ol class="indicator"></ol>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <div class="copyright">
+        <p>Copyright © 2021 Jean-Baptiste Sottile | Conçu par <a href="https://www.dcorroyer.fr/" target="_blank">Dylan Corroyer</a></p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="../js/blueimp-gallery.min.js"></script>
+<script>
+    document.getElementById('links').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+            link = target.src ? target.parentNode : target,
+            options = {index: link, event: event},
+            links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+</script>
+
+</body>
+</html>

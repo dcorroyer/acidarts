@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Schooldesk Photography Reproduction</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/blueimp-gallery.min.css">
+  <!-- IE -->
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <!-- Appel du JS et du plugin LityJS -->
+  <link href="../styles/lity.css" rel="stylesheet">
+  <script src="../js/jquery.js"></script>
+  <script src="../js/lity.js"></script>
+</head>
+<body>
+
+<img src="../images/background.svg" alt="background" class="background">
+<div class="main">
+  <header>
+    <div class="wrapper">
+      <nav>
+        <a href="../index.html"><img src="../images/logo.svg" alt="logo" class="logo"></a>
+        <label for="menu-mobile" class="menu-mobile">Afficher le menu</label>
+        <input type="checkbox" id="menu-mobile" role="button">
+        <ul>
+          <li><a href="../index.html">Projects</a></li>
+          <li><a href="../shop.html">Shop</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="content">
+    <section>
+      <div class="wrapper">
+        <h4><a href="../index.html"><span>Projects ></span></a> Schooldesk Photography Reproduction</h4>
+        <h1>Schooldesk Photography Reproduction</h1>
+        <div class="flex-container-project">
+          <div class="flex-item-project-gauche">
+            <div class="img-project">
+              <img src="../images/11/schooldesk-photography-preview.jpg" class="img-project-library">
+            </div>
+          </div>
+          <div class="flex-item-project-droite">
+            <div class="identification">
+              <p class="description-project">3d realtime rendering</p>
+              <p class="title-project">Schooldesk Photography Reproduction</p>
+
+              <p class="description-project2"><i>EN</i> - <b>Schooldesk Photography Reproduction</b> is a still image made in <b>Unreal Engine 4</b>.</p>
+              <p class="description-project2">This is a photography reproduction. The goal of this quick project was to demonstrate that we can achieve realistic results using a realtime engine like <b>Unreal Engine 4</b>.
+              <p class="description-project2">Softwares used: 3ds Max, Photoshop, Substance Painter and Unreal Engine 4.</p>
+              <p class="description-project2">Here is the <a href="https://www.artstation.com/artwork/RYXmxD" target="blank"><b>artstation link</b></a> of the project.</p>
+
+              <p class="description-project2"><i>FR</i> - <b>Schooldesk Photography Reproduction</b> est un rendu d'image réalisé dans <b>Unreal Engine 4</b>.</p>
+              <p class="description-project2">C'est un exercice de reproduction d'une photographie. Le but de ce petit projet était de démontrer que l'on peut obtenir un rendu réaliste avec un moteur de rendu temps-réel comme <b>Unreal Engine 4</b>.
+              <p class="description-project2">Logiciels utilisés: 3ds Max, Photoshop, Substance Painter et Unreal Engine 4.</p>
+              <p class="description-project2">Voici le lien <a href="https://www.artstation.com/artwork/RYXmxD" target="blank"><b>artstation</b></a> du projet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="library">
+      <div class="wrapper">
+        <div id="links">
+          <a href="../images/11/schooldesk-photography-01.jpg" title="Schooldesk Photography Reproduction 01"><img src="../images/11/schooldesk-photography-preview-01.jpg" alt="Schooldesk Photography Reproduction 01" class="img-project-library"></a>
+          <a href="../images/11/schooldesk-photography-02.jpg" title="Schooldesk Photography Reproduction Comparison"><img src="../images/11/schooldesk-photography-preview.jpg" alt="Schooldesk Photography Reproduction Comparison" class="img-project-library"></a>
+        </div>
+        <div id="blueimp-gallery" class="blueimp-gallery">
+          <div class="slides"></div>
+          <h3 class="title"></h3>
+          <a class="prev">‹</a>
+          <a class="next">›</a>
+          <a class="close">×</a>
+          <a class="play-pause"></a>
+          <ol class="indicator"></ol>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <div class="copyright">
+        <p>Copyright © 2021 Jean-Baptiste Sottile | Conçu par <a href="https://www.dcorroyer.fr/" target="_blank">Dylan Corroyer</a></p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="../js/blueimp-gallery.min.js"></script>
+<script>
+    document.getElementById('links').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+            link = target.src ? target.parentNode : target,
+            options = {index: link, event: event},
+            links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+</script>
+
+</body>
+</html>

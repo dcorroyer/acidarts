@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Les Hespérides</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/blueimp-gallery.min.css">
+  <!-- IE -->
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <!-- Appel du JS et du plugin LityJS -->
+  <link href="../styles/lity.css" rel="stylesheet">
+  <script src="../js/jquery.js"></script>
+  <script src="../js/lity.js"></script>
+</head>
+<body>
+
+<img src="../images/background.svg" alt="background" class="background">
+<div class="main">
+  <header>
+    <div class="wrapper">
+      <nav>
+        <a href="../index.html"><img src="../images/logo.svg" alt="logo" class="logo"></a>
+        <label for="menu-mobile" class="menu-mobile">Afficher le menu</label>
+        <input type="checkbox" id="menu-mobile" role="button">
+        <ul>
+          <li><a href="../index.html">Projects</a></li>
+          <li><a href="../shop.html">Shop</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="content">
+    <section>
+      <div class="wrapper">
+        <h4><a href="../index.html"><span>Projects ></span></a> Les Hespérides</h4>
+        <h1>Les Hespérides</h1>
+        <div class="flex-container-project">
+          <div class="flex-item-project-gauche">
+            <div class="img-project">
+              <img src="../images/07/les-hesperides-preview.jpg" class="img-project-library">
+            </div>
+          </div>
+          <div class="flex-item-project-droite">
+            <div class="identification">
+              <p class="description-project">3d architecture rendering</p>
+              <p class="title-project">Les Hespérides</p>
+
+              <p class="description-project2"><i>EN</i> - <b>LES HESPERIDES</b> is an architectural project composed of a serie of perspectives. It is a luxurious duplex with rooftop (solarium) located near the port of Cannes, by <a href="https://rbarchitectes.fr/" target="_blank"><b>BRANCHET ROMAIN</b></a> Architect.</p>
+              <p class="description-project2">As a part of the <a href="https://www.missimi-studios.com/" target="_blank"><b>MISSIMI STUDIOS</b></a> team, I created this rendering (modelisation, lighting, rendering, post-production). The rendering engine is <b>Vray</b>.</p>
+
+              <p class="description-project2"><i>FR</i> - <b>LES HESPERIDES</b> est un projet architectural composé d'une série de perspectives. C'est un luxueux duplex avec toiture (solarium) situé près du port de Cannes, par <a href="https://rbarchitectes.fr/" target="_blank"><b>BRANCHET ROMAIN</b></a> Architecte.</p>
+              <p class="description-project2">Au sein de l'équipe de <a href="https://www.missimi-studios.com/" target="_blank"><b>MISSIMI STUDIOS</b></a>, j'ai réalisé cette perspective (modelisation, lighting, rendering, post-production). Le moteur de rendu est <b>Vray</b>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <div class="copyright">
+        <p>Copyright © 2021 Jean-Baptiste Sottile | Conçu par <a href="https://www.dcorroyer.fr/" target="_blank">Dylan Corroyer</a></p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="../js/blueimp-gallery.min.js"></script>
+<script>
+    document.getElementById('links').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+            link = target.src ? target.parentNode : target,
+            options = {index: link, event: event},
+            links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Acidarts - 3D Artist</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <!-- IE -->
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+
+<img src="images/background.svg" alt="background" class="background">
+<div class="main">
+  <header>
+    <div class="wrapper">
+      <nav>
+        <a href="index.html"><img src="images/logo.svg" alt="logo" class="logo"></a>
+        <label for="menu-mobile" class="menu-mobile">Afficher le menu</label>
+        <input type="checkbox" id="menu-mobile" role="button">
+        <ul>
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="content">
+    <section>
+      <div class="wrapper">
+        <h4><a href="index.html"><span>Acidarts ></span></a> Contact</h4>
+        <h1>Contact</h1>
+        <div class="flex-container-project">
+          <div class="flex-item-project-gauche">
+
+            <form class="contact" method="post" action="php/ContactForm.php">
+              <input type="text" name="surname" required placeholder="Surname / Nom *" id="surname">
+              <input type="text" name="name" required placeholder="Name / Prénom *" id="name">
+              <input type="email" name="email" required placeholder="Email *" id="email">
+              <input type="text" name="object" placeholder="Subject / Sujet" id="subject">
+              <textarea name="message" required placeholder="Your message / Votre message *" id="message"></textarea>
+              <button type="submit" name="send" id="button">Envoyer</button>
+            </form>
+
+          </div>
+          <div class="flex-item-project-droite">
+            <div class="identification-about">
+              <p class="title-project-contact">Feel free to contact me for more informations on my work or for any other inquiries.</p>
+              <p class="title-project-contact">N'hésitez pas à me contacter pour plus d'informations sur mon travail ou pour toutes autres demandes.</p>
+              <p class="description-project">SOCIAL NETWORK</p>
+
+              <a href="https://www.artstation.com/acidarts" target="_blank"><img src="images/contact/artstation.jpg" class="img-social"></a>
+              <a href="https://www.linkedin.com/in/jeanbaptiste-sottile-16726790/" target="_blank"><img src="images/contact/in.jpg" class="img-social"></a>
+              <a href="https://vimeo.com/acidarts" target="_blank"><img src="images/contact/vimeo.jpg" class="img-social"></a>
+              <a href="https://join.skype.com/invite/d7yAsg57DYqs" target="_blank"><img src="images/contact/skype.jpg" class="img-social"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <div class="copyright">
+        <p>Copyright © 2021 Jean-Baptiste Sottile | Conçu par <a href="https://www.dcorroyer.fr/" target="_blank">Dylan Corroyer</a></p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
